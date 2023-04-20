@@ -1,0 +1,718 @@
+body {
+        overflow-x: hidden;
+}
+.banner_service_detail {
+        position: relative;
+}
+.banner_service_detail .banner::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff42;
+        bottom: 0;
+}
+.banner_service_detail .banner .img img {
+        height: 500px;
+}
+
+.banner_service_detail .banner .content h2 {
+        font-size: 45px;
+        font-weight: 800;
+        color: #000;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+}
+.banner_service_detail .banner .content h4 {
+        font-size: 24px;
+        color: #000;
+        font-weight: 400;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        margin: 70px auto;
+        width: 100%;
+        text-align: center;
+}
+@media (max-width: 991px) {
+        .banner_service_detail .banner .content h2 {
+                top: 35%;
+        }
+        .banner_service_detail .banner .content h4 {
+                margin-top: 120px;
+                top: 25%;
+        }
+}
+@media (max-width: 575px) {
+        .banner_service_detail .banner .content h2 {
+                top: 30%;
+        }
+        .banner_service_detail .banner .content h4 {
+                margin-top: 90px;
+                top: 40%;
+        }
+        .banner_service_detail .banner .img img {
+                height: 250px;
+        }
+        .detail .img img {
+                height: 350px !important;
+        }
+}
+.detail {
+        margin-top: 50px;
+        margin-bottom: 50px;
+}
+.detail .img {
+        position: relative;
+        margin-bottom: 30px;
+}
+.detail .img img {
+        height: 550px;
+}
+.detail .img .sale {
+        position: absolute;
+        top: 10px;
+        background-color: #ffff;
+        right: 10px;
+        padding: 5px;
+        font-weight: 600;
+}
+.detail .img .chevon .chevon_left {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        font-size: 50px;
+        font-weight: 500;
+        color: rgba(160, 156, 156, 0.699);
+}
+.detail .img .chevon .chevon_right {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        font-size: 50px;
+        font-weight: 500;
+        color: rgba(160, 156, 156, 0.699);
+}
+.detail .service_picture {
+        justify-content: space-between;
+}
+.detail .service_picture .picture {
+        margin-bottom: 20px;
+}
+.detail .service_picture .picture ul {
+        display: flex;
+        margin: 0 auto;
+        flex-wrap: wrap;
+}
+.detail .service_picture .picture ul li {
+        display: inline;
+        margin: 20px auto;
+}
+
+.detail .service_picture .picture ul li.active {
+        border: 2px solid #000;
+}
+.detail .service_picture .picture img {
+        height: 150px;
+        width: 120px;
+        margin-right: 2px;
+}
+.detail .star {
+        margin-bottom: 10px;
+}
+
+.detail h3 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #000000d3;
+}
+.detail h4 {
+        font-size: 24px;
+        font-weight: 400;
+        color: #000;
+}
+.detail h5 {
+        font-size: 24px;
+        font-weight: 400;
+        color: #000;
+}
+.detail h4 span {
+        font-size: 24px;
+        font-weight: 600;
+        color: #000;
+        margin-left: 2px;
+}
+.detail h5 span {
+        font-size: 24px;
+        font-weight: 600;
+        color: #000;
+        margin-left: 2px;
+}
+.detail .price {
+        color: #000;
+        font-weight: 600;
+        font-size: 30px;
+}
+.detail .price span {
+        color: rgb(128, 123, 123);
+        text-decoration: line-through;
+        font-size: 24px;
+        margin-left: 10px;
+        font-weight: 400;
+}
+.detail .text {
+        margin-top: 20px;
+}
+.detail .text p {
+        font-size: 24px;
+        margin-bottom: 30px;
+}
+
+/* .select .number {
+        margin-right: -80px;
+} */
+.select .number h6 {
+        font-weight: 600;
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        text-decoration: underline;
+}
+.select .press {
+        margin-top: 30px;
+        margin-bottom: 20px;
+}
+.select .press .btn {
+        background-color: #000;
+        border-radius: 0;
+        border: none;
+        padding: 4px 6px;
+        margin-right: 20px;
+        color: #ffff;
+        font-size: 24px;
+}
+.select .press .btn_1 {
+        background-color: transparent;
+        border-radius: 0;
+        border: 1px solid #000;
+        color: #000;
+
+        padding: 3px 5px;
+        font-size: 24px;
+}
+.select .press .btn_1 a {
+        color: #000;
+}
+
+.select .number .select_number {
+        display: flex;
+        align-items: center;
+        margin-top: -15px;
+}
+.select .number .select_number h6 {
+        font-weight: 300;
+        font-size: 24px;
+        margin-right: 10px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+}
+.select .number .select_number input {
+        width: 10%;
+        padding: 3px;
+        text-align: center;
+        border: 1px solid #504e4e7a;
+        margin-right: 10px;
+        font-size: 24px;
+}
+.select .number .select_number .typeClick {
+        background-color: #000;
+        color: #ffff;
+        padding: 6px 10px;
+        text-align: center;
+        font-size: 14px;
+        margin-right: 10px;
+}
+
+.add {
+        position: fixed;
+        top: 20px;
+        right: -300px;
+        width: 300px;
+        transition: all 0.2s;
+        z-index: 99999;
+        background: #fff;
+        border: 1px solid #d9d9d9;
+        box-shadow: 0 0 8px rgb(0 0 0 / 15%);
+        border-radius: 16px;
+        padding: 18px;
+}
+.add.active {
+        right: 0;
+}
+.add .s_title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 18px;
+        letter-spacing: 0.03em;
+        color: #000;
+        margin-bottom: 0;
+}
+.add .product {
+        display: flex;
+        padding-top: 15px;
+        border-top: 1px solid #d9d9d9;
+        margin-top: 15px;
+        padding-bottom: 5px;
+}
+.add .product .img {
+        width: 30%;
+        position: relative;
+}
+.add .product .img img {
+        width: 70%;
+        height: 50%;
+        overflow: hidden;
+}
+.add .product .content {
+        display: flex;
+        flex-flow: column;
+        width: 70%;
+}
+.add .product .content p {
+        font-size: 20px;
+        font-weight: 600;
+}
+.add .product .content p span {
+        font-size: 18px;
+        font-weight: 400;
+}
+.add .product .content .title {
+        font-weight: 500;
+        font-size: 24px;
+        color: #000;
+}
+.add .product .content .price_1 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+}
+.add .product .content .price_1 .discount {
+        color: #000;
+        font-weight: 600;
+        margin-right: 7px;
+        font-size: 24px;
+}
+
+.add .product .content .price_1 .market {
+        color: #a9a9a99c;
+        text-decoration: line-through;
+        font-size: 18px;
+}
+.add .s_button {
+        display: block;
+        text-decoration: underline;
+        border: none;
+        text-align: center;
+        padding: 6px 6px 12px;
+        border-radius: 0;
+        font-weight: 500;
+}
+
+.detail .trademarks {
+        margin-top: 40px;
+}
+
+.detail .trademarks h6 {
+        font-size: 24px;
+        font-weight: 600;
+        text-decoration: underline;
+        margin-top: -20px;
+}
+.detail .trademarks ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: space-between;
+}
+.detail .trademarks ul li {
+        border: 1px solid #0000002f;
+        display: inline;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin: 10px auto;
+}
+.detail .trademarks ul li.active {
+        border: 2px solid #000;
+}
+.detail .trademarks ul li img {
+        height: 60px;
+        width: 120px;
+        padding: 0 5px;
+}
+
+.detail .hair_style h6 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 28px;
+        margin-bottom: 20px;
+        text-decoration: underline;
+}
+.detail .hair_style ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: -10px;
+}
+.detail .hair_style ul li {
+        text-align: center;
+        border: 1px solid #0000002f;
+        font-size: 20px;
+        /* width: 30%; */
+        border-radius: 5%;
+        margin: 10px auto;
+        padding: 2px;
+        display: inline;
+}
+.detail .hair_style ul li.active {
+        border: 2px solid #000;
+}
+
+.description .nav-pills .nav-item .nav-link {
+        color: #000;
+        border-radius: 0;
+        margin-right: 20px;
+        font-weight: 600;
+        border-bottom: transparent;
+        font-size: 26px;
+}
+.description .nav-pills .nav-item .nav-link.active {
+        color: black;
+        background-color: transparent;
+        border-bottom: 1px solid #000;
+
+        border-radius: 0;
+        font-weight: 600;
+}
+
+.description .tab-content .tab-pane {
+        margin-top: 30px;
+        border: 1px solid #0000001a;
+        padding: 20px;
+        margin-bottom: 50px;
+}
+.description .tab-content .content p {
+        font-size: 24px !important;
+        font-weight: 500 !important;
+}
+.description .tab-content .tab-pane .cmt {
+        align-items: center;
+        margin-bottom: 50px;
+}
+.description .tab-content .tab-pane .cmt .img img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+}
+.description .tab-content .tab-pane .cmt .content {
+        margin-bottom: 20px;
+}
+.description .tab-content .tab-pane .cmt .content h6 {
+        font-size: 26px;
+        font-weight: 600;
+        color: #000;
+        margin-top: 10px;
+}
+.description .tab-content .tab-pane .cmt .content p {
+        text-align: left;
+        font-size: 24px;
+        font-weight: 300;
+}
+.description .tab-content .tab-pane .cmt .content .icon {
+        margin-bottom: 10px;
+}
+.description .tab-content .tab-pane .cmt .content .icon i {
+        font-size: 12px !important;
+}
+.description .tab-content .tab-pane .cmt .content span {
+        font-size: 20px;
+        color: #0000005f;
+}
+.description .tab-content .tab-pane span {
+        font-size: 14px;
+}
+.description .tab-content .tab-pane p {
+        font-size: 24px;
+        text-align: center;
+        font-weight: 600;
+}
+.description .tab-content .tab-pane .review_table {
+        margin-top: 30px;
+        margin-bottom: 30px;
+}
+.description .tab-content .tab-pane .review_table span {
+        font-size: 22px;
+        margin-bottom: 30px;
+}
+.description .tab-content .tab-pane .review_table p {
+        font-size: 22px;
+        text-align: left;
+        margin-top: 20px;
+}
+.description .tab-content .tab-pane .review_table .icon {
+        margin-bottom: 30px;
+        transition: 0.5s;
+}
+
+.description .tab-content .tab-pane .review_table textarea {
+        width: 100%;
+        outline: none;
+        padding: 10px;
+        border: 1px solid #0000006a;
+}
+.description .tab-content .tab-pane .review_table input {
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+        outline: none;
+        border: 1px solid #0000006a;
+}
+input[type="date" i] {
+        font-weight: 10;
+}
+.description .tab-content .tab-pane .review_table button {
+        margin-top: 50px;
+
+        border-radius: 0;
+        background-color: transparent;
+        border: 2px solid #000;
+        color: #000;
+        padding: 10px 35px;
+
+        transition: 0.5s;
+
+        bottom: 30px;
+
+        font-size: 24px;
+        font-weight: 600;
+}
+.description .tab-content .tab-pane .review_table button:hover {
+        background-color: #000;
+        color: #ffff;
+}
+.description .tab-content .review_table {
+        padding: 30px;
+        margin: 0 auto;
+}
+
+.service_other .card {
+        border: none;
+        position: relative;
+        margin-top: 20px;
+}
+.service_other .title {
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 0;
+        padding: 7px;
+        background-color: #000;
+        color: #ffff;
+        margin-bottom: 30px;
+        text-align: center;
+}
+.service_other .card .thumb {
+        overflow: hidden;
+        position: relative;
+}
+.service_other .card .img_1 img {
+        height: 350px;
+        cursor: pointer;
+        transition: 0.5s;
+}
+.service_other .card:hover .img_1 img {
+        transform: scale(1.2);
+}
+
+.service_other .card .btn {
+        position: absolute;
+        bottom: 0px;
+        margin-bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        border: 1px solid #000;
+        border-radius: 0;
+        padding: 5px;
+        background-color: transparent;
+        font-size: 24px;
+        transition: 0.5s;
+        opacity: 0;
+        color: #000;
+        font-weight: 600;
+}
+.service_other .card.btn::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 100%;
+        background-color: #000;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        z-index: 0;
+        color: #ffff;
+        transition: 0.5s;
+}
+.service_other .card .btn:hover:after {
+        width: 100%;
+        opacity: 1;
+        animation: run alternate 0.5s;
+}
+@keyframes run {
+        from {
+                width: 0;
+        }
+        to {
+                width: 100%;
+        }
+}
+.service_other .card:hover .btn {
+        opacity: 1;
+        bottom: 30px;
+}
+
+.service_other .card .btn:hover a {
+        color: #ffff;
+        z-index: 99;
+        position: relative;
+}
+.service_other .card h4 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+}
+.service_other .card .type {
+        font-size: 22px;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #000;
+}
+
+.service_other .card .price {
+        font-weight: 600;
+        font-size: 24px;
+        color: #000;
+        text-align: center;
+}
+.service_other .card .price span {
+        font-weight: 100;
+        font-size: 20px;
+        color: gray;
+        text-decoration: line-through;
+}
+.service_other .card .btn {
+        position: absolute;
+        bottom: 100px;
+        margin-bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        border: 1px solid #000;
+        border-radius: 0;
+        padding: 5px;
+        background-color: transparent;
+        color: #000;
+        transition: 0.5s;
+        opacity: 0;
+        font-weight: 600;
+}
+.service_other .card .btn:hover {
+        background-color: #000;
+        color: #ffff;
+}
+
+.add .s-popup-2.active {
+        right: 0;
+}
+.add .s-popup-2 .s_title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 0.03em;
+        color: #000;
+        margin-bottom: 0;
+}
+.add .s-popup-2 .product {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 15px;
+        border-top: 1px solid #d9d9d9;
+        margin-top: 15px;
+        padding-bottom: 5px;
+}
+.add .s-popup-2 .product .img {
+        width: 25%;
+        overflow: hidden;
+        border-radius: 10px;
+        position: relative;
+}
+.add .s-popup-2 .product .content {
+        display: flex;
+        flex-flow: column;
+        width: 75%;
+        padding-left: 10px;
+}
+
+.add .s-popup-2 .product .content .title {
+        font-weight: 500;
+        font-size: 20px;
+        color: #000;
+        margin-bottom: 5px;
+}
+.add .s-popup-2 .product .content .price_1 {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 10px;
+}
+.add .s-popup-2 .product .content .price_1 .discount {
+        color: #f00;
+        font-weight: 500;
+        margin-right: 7px;
+        text-align: center;
+}
+
+/* .add .s-popup-2 .product .content .price_1 .market {
+    color: #a9a9a9;
+    text-decoration: line-through;
+    font-size: 8px;
+} */
+.add .s-popup-2 .s_button {
+        display: block;
+
+        text-align: center;
+
+        font-weight: 500;
+}
+.add a {
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        color: #000;
+        font-size: 20px;
+        transition: 0.5s;
+}
+.add a:hover {
+        border-bottom: 2px solid #242323;
+        width: 40%;
+}
