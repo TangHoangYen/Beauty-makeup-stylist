@@ -130,6 +130,7 @@
         padding: 40px 0;
         background-image: url(../img_1/bg/bg_table_1.jpg);
         background-size: cover;
+        position: relative;
 }
 .contact_form h2 {
         margin-bottom: 20px;
@@ -137,25 +138,30 @@
         font-size: 80px;
         font-weight: 500;
 }
-.contact_form .infor_personal {
-        display: flex;
-        justify-content: space-between;
+.contact_form .form-group {
+        position: relative;
+        margin-bottom: 50px;
 }
-.contact_form .infor_personal input {
+.contact_form .form-group .infor {
+        position: absolute;
+        left: 0;
+        top: -30px;
+}
+.contact_form .form-group input {
         margin-top: 20px;
         margin-bottom: 20px;
         border-radius: 10px;
-        width: 49%;
+
         padding: 15px;
         outline: none;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         border: none;
-        font-size: 24px;
+        font-size: 20px;
 }
-.contact_form .note textarea {
+.contact_form .form-group textarea {
         margin-top: 10px;
         margin-bottom: 20px;
-        width: 100%;
+
         padding: 15px;
         border-radius: 10px;
         outline: none;
@@ -166,8 +172,8 @@
 .contact_form button {
         background-color: transparent;
         border-radius: 0;
-        border: none;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border: 2px solid #000;
+
         color: #000;
         font-weight: 500;
         padding: 10px 50px;
@@ -183,6 +189,12 @@
         color: #ffff;
         font-weight: 600;
 }
+.txt_red {
+        color: red;
+
+        font-style: italic;
+}
+
 .map .img {
         position: relative;
 }
