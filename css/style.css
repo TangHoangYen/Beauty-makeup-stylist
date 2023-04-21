@@ -930,3 +930,14 @@ body {
         margin-top: 120px;
         font-size: 18px;
 }
+.backtop {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background-color: #000;
+        z-index: 9999;
+        padding: 8px 15px;
+        font-size: 18px;
+        color: #ffff;
+        cursor: pointer;
+}
