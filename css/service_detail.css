@@ -47,6 +47,9 @@ body {
                 margin-top: 120px;
                 top: 25%;
         }
+        .add.active {
+                right: 200px;
+        }
 }
 @media (max-width: 575px) {
         .banner_service_detail .banner .content h2 {
@@ -54,15 +57,16 @@ body {
         }
         .banner_service_detail .banner .content h4 {
                 margin-top: 90px;
-                top: 40%;
+                top: 37%;
         }
         .banner_service_detail .banner .img img {
                 height: 250px;
         }
-        .detail .img img {
-                height: 350px !important;
+        .add.active {
+                right: 100px;
         }
 }
+
 .detail {
         margin-top: 50px;
         margin-bottom: 50px;
@@ -72,7 +76,7 @@ body {
         margin-bottom: 30px;
 }
 .detail .img img {
-        height: 550px;
+        height: 530px;
 }
 .detail .img .sale {
         position: absolute;
@@ -82,22 +86,7 @@ body {
         padding: 5px;
         font-weight: 600;
 }
-.detail .img .chevon .chevon_left {
-        position: absolute;
-        top: 50%;
-        left: 10px;
-        font-size: 50px;
-        font-weight: 500;
-        color: rgba(160, 156, 156, 0.699);
-}
-.detail .img .chevon .chevon_right {
-        position: absolute;
-        top: 50%;
-        right: 10px;
-        font-size: 50px;
-        font-weight: 500;
-        color: rgba(160, 156, 156, 0.699);
-}
+
 .detail .service_picture {
         justify-content: space-between;
 }
@@ -110,12 +99,11 @@ body {
         flex-wrap: wrap;
 }
 .detail .service_picture .picture ul li {
-        display: inline;
-        margin: 20px auto;
+        margin: 10px auto;
 }
 
 .detail .service_picture .picture ul li.active {
-        border: 2px solid #000;
+        border: 1px solid #000;
 }
 .detail .service_picture .picture img {
         height: 150px;
@@ -123,40 +111,26 @@ body {
         margin-right: 2px;
 }
 .detail .star {
-        margin-bottom: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
 }
 
 .detail h3 {
         font-size: 32px;
-        font-weight: 700;
+        font-weight: 600;
         color: #000000d3;
 }
-.detail h4 {
+.detail span {
         font-size: 24px;
-        font-weight: 400;
+        font-weight: 500;
         color: #000;
-}
-.detail h5 {
-        font-size: 24px;
-        font-weight: 400;
-        color: #000;
-}
-.detail h4 span {
-        font-size: 24px;
-        font-weight: 600;
-        color: #000;
-        margin-left: 2px;
-}
-.detail h5 span {
-        font-size: 24px;
-        font-weight: 600;
-        color: #000;
-        margin-left: 2px;
 }
 .detail .price {
         color: #000;
         font-weight: 600;
         font-size: 30px;
+        margin-bottom: -20px;
+        margin-top: -10px;
 }
 .detail .price span {
         color: rgb(128, 123, 123);
@@ -166,47 +140,31 @@ body {
         font-weight: 400;
 }
 .detail .text {
-        margin-top: 20px;
+        margin-top: 30px;
 }
 .detail .text p {
         font-size: 24px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
 }
 
-/* .select .number {
+.select .number {
         margin-right: -80px;
-} */
+}
 .select .number h6 {
         font-weight: 600;
         font-size: 24px;
-        margin-top: 20px;
-        margin-bottom: 40px;
+        margin-top: 40px;
+        margin-bottom: 0;
         text-decoration: underline;
 }
-.select .press {
-        margin-top: 30px;
-        margin-bottom: 20px;
-}
-.select .press .btn {
+.select .number button {
         background-color: #000;
         border-radius: 0;
         border: none;
-        padding: 4px 6px;
-        margin-right: 20px;
+        width: 20%;
+        margin: 30px 20px;
         color: #ffff;
         font-size: 24px;
-}
-.select .press .btn_1 {
-        background-color: transparent;
-        border-radius: 0;
-        border: 1px solid #000;
-        color: #000;
-
-        padding: 3px 5px;
-        font-size: 24px;
-}
-.select .press .btn_1 a {
-        color: #000;
 }
 
 .select .number .select_number {
@@ -219,11 +177,9 @@ body {
         font-size: 24px;
         margin-right: 10px;
         margin-top: 30px;
-        margin-bottom: 20px;
 }
 .select .number .select_number input {
-        width: 10%;
-        padding: 3px;
+        padding: 6px 10px;
         text-align: center;
         border: 1px solid #504e4e7a;
         margin-right: 10px;
@@ -235,7 +191,6 @@ body {
         padding: 6px 10px;
         text-align: center;
         font-size: 14px;
-        margin-right: 10px;
 }
 
 .add {
@@ -252,7 +207,7 @@ body {
         padding: 18px;
 }
 .add.active {
-        right: 0;
+        right: 20px;
 }
 .add .s_title {
         font-weight: 500;
@@ -270,30 +225,31 @@ body {
         padding-bottom: 5px;
 }
 .add .product .img {
-        width: 30%;
+        width: 40%;
         position: relative;
 }
 .add .product .img img {
-        width: 70%;
-        height: 50%;
+        width: 80%;
+        height: 70%;
         overflow: hidden;
 }
 .add .product .content {
         display: flex;
         flex-flow: column;
-        width: 70%;
+        width: 60%;
 }
 .add .product .content p {
-        font-size: 20px;
-        font-weight: 600;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 0px;
 }
 .add .product .content p span {
         font-size: 18px;
-        font-weight: 400;
+        font-weight: 600;
 }
 .add .product .content .title {
-        font-weight: 500;
-        font-size: 24px;
+        font-weight: 600;
+        font-size: 18px;
         color: #000;
 }
 .add .product .content .price_1 {
@@ -305,14 +261,9 @@ body {
         color: #000;
         font-weight: 600;
         margin-right: 7px;
-        font-size: 24px;
+        font-size: 32px;
 }
 
-.add .product .content .price_1 .market {
-        color: #a9a9a99c;
-        text-decoration: line-through;
-        font-size: 18px;
-}
 .add .s_button {
         display: block;
         text-decoration: underline;
@@ -320,37 +271,33 @@ body {
         text-align: center;
         padding: 6px 6px 12px;
         border-radius: 0;
-        font-weight: 500;
+        font-weight: 800;
 }
 
 .detail .trademarks {
-        margin-top: 40px;
+        margin-bottom: -20px;
 }
 
 .detail .trademarks h6 {
         font-size: 24px;
         font-weight: 600;
         text-decoration: underline;
-        margin-top: -20px;
+        margin-bottom: 20px;
 }
 .detail .trademarks ul {
-        display: flex;
         flex-wrap: wrap;
-
-        justify-content: space-between;
 }
 .detail .trademarks ul li {
         border: 1px solid #0000002f;
-        display: inline;
+        margin-bottom: 20px;
         border-radius: 5px;
         margin-right: 10px;
-        margin: 10px auto;
 }
 .detail .trademarks ul li.active {
         border: 2px solid #000;
 }
 .detail .trademarks ul li img {
-        height: 60px;
+        height: 80px;
         width: 120px;
         padding: 0 5px;
 }
@@ -362,23 +309,21 @@ body {
         margin-bottom: 20px;
         text-decoration: underline;
 }
-.detail .hair_style ul {
+.hair_style ul {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
-        margin-top: -10px;
 }
-.detail .hair_style ul li {
+.hair_style ul li {
         text-align: center;
         border: 1px solid #0000002f;
         font-size: 20px;
         /* width: 30%; */
         border-radius: 5%;
-        margin: 10px auto;
-        padding: 2px;
-        display: inline;
+        margin-right: 10px;
+        padding: 5px;
+        margin-bottom: 20px;
 }
-.detail .hair_style ul li.active {
+.hair_style ul li.active {
         border: 2px solid #000;
 }
 
@@ -403,7 +348,6 @@ body {
         margin-top: 30px;
         border: 1px solid #0000001a;
         padding: 20px;
-        margin-bottom: 50px;
 }
 .description .tab-content .content p {
         font-size: 24px !important;
@@ -511,10 +455,12 @@ input[type="date" i] {
         margin: 0 auto;
 }
 
+.service_other {
+        margin-bottom: 80px;
+}
 .service_other .card {
         border: none;
         position: relative;
-        margin-top: 20px;
 }
 .service_other .title {
         font-size: 40px;
@@ -526,9 +472,8 @@ input[type="date" i] {
         margin-bottom: 30px;
         text-align: center;
 }
-.service_other .card .thumb {
+.service_other .card .img_1 {
         overflow: hidden;
-        position: relative;
 }
 .service_other .card .img_1 img {
         height: 350px;
@@ -541,57 +486,22 @@ input[type="date" i] {
 
 .service_other .card .btn {
         position: absolute;
-        bottom: 0px;
+        bottom: 100px;
         margin-bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
         width: 60%;
-        border: 1px solid #000;
+        border: none;
         border-radius: 0;
         padding: 5px;
-        background-color: transparent;
+        background-color: rgb(43, 42, 42);
+        transition: 0.5s;
+        opacity: 0;
         font-size: 24px;
-        transition: 0.5s;
-        opacity: 0;
-        color: #000;
-        font-weight: 600;
-}
-.service_other .card.btn::after {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 0;
-        height: 100%;
-        background-color: #000;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        z-index: 0;
-        color: #ffff;
-        transition: 0.5s;
-}
-.service_other .card .btn:hover:after {
-        width: 100%;
-        opacity: 1;
-        animation: run alternate 0.5s;
-}
-@keyframes run {
-        from {
-                width: 0;
-        }
-        to {
-                width: 100%;
-        }
 }
 .service_other .card:hover .btn {
         opacity: 1;
-        bottom: 30px;
-}
-
-.service_other .card .btn:hover a {
-        color: #ffff;
-        z-index: 99;
-        position: relative;
+        bottom: 180px;
 }
 .service_other .card h4 {
         font-size: 24px;
@@ -641,62 +551,6 @@ input[type="date" i] {
         color: #ffff;
 }
 
-.add .s-popup-2.active {
-        right: 0;
-}
-.add .s-popup-2 .s_title {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 18px;
-        letter-spacing: 0.03em;
-        color: #000;
-        margin-bottom: 0;
-}
-.add .s-popup-2 .product {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 15px;
-        border-top: 1px solid #d9d9d9;
-        margin-top: 15px;
-        padding-bottom: 5px;
-}
-.add .s-popup-2 .product .img {
-        width: 25%;
-        overflow: hidden;
-        border-radius: 10px;
-        position: relative;
-}
-.add .s-popup-2 .product .content {
-        display: flex;
-        flex-flow: column;
-        width: 75%;
-        padding-left: 10px;
-}
-
-.add .s-popup-2 .product .content .title {
-        font-weight: 500;
-        font-size: 20px;
-        color: #000;
-        margin-bottom: 5px;
-}
-.add .s-popup-2 .product .content .price_1 {
-        display: flex;
-        align-items: flex-end;
-        margin-bottom: 10px;
-}
-.add .s-popup-2 .product .content .price_1 .discount {
-        color: #f00;
-        font-weight: 500;
-        margin-right: 7px;
-        text-align: center;
-}
-
-/* .add .s-popup-2 .product .content .price_1 .market {
-    color: #a9a9a9;
-    text-decoration: line-through;
-    font-size: 8px;
-} */
 .add .s-popup-2 .s_button {
         display: block;
 
@@ -715,4 +569,66 @@ input[type="date" i] {
 .add a:hover {
         border-bottom: 2px solid #242323;
         width: 40%;
+}
+.select .number h6 {
+        font-weight: 600;
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-decoration: underline;
+        margin-right: 10px;
+}
+.select .press {
+        margin-top: 30px;
+        margin-bottom: 20px;
+}
+.select .press .btn {
+        background-color: #000;
+        border-radius: 0;
+        border: none;
+        padding: 4px 6px;
+        margin-right: 20px;
+        color: #ffff;
+        font-size: 24px;
+}
+.select .press .btn_1 {
+        background-color: transparent;
+        border-radius: 0;
+        border: 1px solid #000;
+        color: #000;
+
+        padding: 3px 5px;
+        font-size: 24px;
+}
+.select .press .btn_1 a {
+        color: #000;
+}
+
+.select .number .select_number {
+        display: flex;
+        align-items: center;
+        margin-top: -15px;
+}
+.select .number .select_number h6 {
+        font-weight: 300;
+        font-size: 24px;
+        margin-right: 10px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+}
+.select .number .select_number input {
+        width: 15%;
+        padding: 3px;
+        text-align: center;
+        border: 1px solid #504e4e7a;
+        margin-right: 10px;
+        font-size: 24px;
+}
+.select .number .select_number .typeClick {
+        background-color: #000;
+        color: #ffff;
+        padding: 8px 12px;
+        text-align: center;
+        font-size: 14px;
+        margin-right: 10px;
 }

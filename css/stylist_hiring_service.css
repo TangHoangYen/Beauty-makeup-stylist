@@ -171,7 +171,6 @@
         position: relative;
 }
 .product .filter {
-        justify-content: space-between;
         padding: 15px 0;
         border-bottom: 1px solid #000;
         margin-bottom: 30px;
@@ -190,6 +189,9 @@
         font-size: 20px;
         padding: 8px;
         margin-top: -4px;
+}
+.product .right {
+        margin: 0 auto;
 }
 .product .search_service {
         padding: 1px;
@@ -219,17 +221,17 @@
 }
 .product .tags {
         margin-top: 60px;
-        border: 1px solid #4242423d;
+        border-top: 1px solid #000;
         padding: 30px;
 }
 .product .tags h4 {
         margin-top: 20px;
-        font-size: 26px;
-        font-weight: 600;
+        font-size: 32px;
+        font-weight: 700;
         margin-bottom: 20px;
 }
 .product .tags ul li {
-        border: 1px solid #000;
+        border: none;
         padding: 8px;
         margin-left: -3px;
         transition: 0.5s;
@@ -239,6 +241,7 @@
 }
 .product .tags ul li:hover {
         margin-left: 3px;
+        font-weight: 600;
 }
 .product .tags ul li a {
         margin: 0 auto;
@@ -252,13 +255,13 @@
 
 .product .categories {
         margin-top: 60px;
-        border: 1px solid #4242423d;
+        border-top: 1px solid #000;
         padding: 30px;
 }
 .product .categories h4 {
         margin-top: 20px;
-        font-size: 26px;
-        font-weight: 600;
+        font-size: 32px;
+        font-weight: 700;
         margin-bottom: 20px;
 }
 .product .categories ul li a {
@@ -273,41 +276,26 @@
 }
 .product .categories ul li:hover {
         margin-left: 10px;
+        font-weight: 500;
 }
 .product .filter_bar {
-        margin-top: 47px;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 30px;
-        border: 1px solid #4242423d;
+        border-top: 1px solid #000;
         padding: 30px;
         align-items: center;
+        margin-top: -10px;
 }
 .product .filter_bar h4 {
         margin-top: 20px;
-        font-size: 26px;
-        font-weight: 600;
+        font-size: 32px;
+        font-weight: 700;
         margin-bottom: 20px;
 }
-.product .filter_bar .scroll {
-        width: 100%;
-        height: 4px;
-        background-color: #000;
-        margin-bottom: 30px;
-}
-.product .filter_bar p {
-        font-weight: 600;
-        font-size: 20px;
-        text-align: center;
-}
-.product .filter_bar button {
-        border: 1px solid #000 !important;
-        background-color: transparent;
-        color: #000;
-        border-radius: 0;
-        border: none;
-        font-weight: 600;
+
+.product .filter_bar .checkbox {
         font-size: 24px;
-}
-.product .filter_bar button:hover {
-        color: #ffff;
-        background-color: #000;
+
+        font-weight: 500;
 }

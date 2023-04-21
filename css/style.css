@@ -669,6 +669,7 @@ body {
 .our-team {
         text-align: center;
         margin-top: 20px;
+        margin-bottom: 20px;
         background-image: linear-gradient(to top, #ffffff61, #ffffff72), url(../img_1/bg/bg_rose1.jpg);
         background-size: cover;
         padding-top: 20px;
@@ -686,102 +687,84 @@ body {
 .our-team .content p {
         font-size: 24px;
         color: #000;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
         font-weight: 300;
 }
-.our-team .team {
+/* .our-team .swiper-slide {
         position: relative;
-        margin-top: 30px;
-        margin-bottom: 20px;
-}
-.our-team .team .card {
-        overflow: hidden;
-        margin-bottom: 40px;
-}
-
-.our-team .team .card::before {
-        content: "";
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        z-index: 1;
-        transition: 0.5s;
-        background-color: rgba(247, 241, 241, 0.397);
-        opacity: 0;
-        transition: 0.5s;
-}
-.our-team .team .card:hover::before {
-        opacity: 1;
-}
-
-.our-team .team .card .card-img-overlay {
-        margin-top: 300px;
-}
-.our-team .team .card .card-img-overlay .social {
-        margin-top: 30px;
-        opacity: 0;
-        transition: 0.5s;
-        position: relative;
-        z-index: 1;
-}
-.our-team .team .card:hover .social {
         margin-top: 10px;
-        opacity: 1;
-}
-.our-team .team .card .card-img-overlay .content {
-        opacity: 0;
-        transition: 0.5s;
-        z-index: 1;
+        margin-bottom: 20px;
+} */
+.our-team .swiper {
+        width: 100%;
         position: relative;
-}
-.our-team .team .card:hover .content {
-        opacity: 1;
+        padding-top: 30px;
+        padding-bottom: 30px;
 }
 
-.our-team .team .card img {
-        transition: 0.5s;
-        height: 450px;
+.our-team .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
 }
-.our-team .team .card:hover img {
-        transform: scale(1.2);
+
+.our-team .swiper-slide img {
+        display: block;
+        width: 100%;
+        position: relative;
 }
-.our-team .team .card .card-img-overlay .content h4 {
+
+.our-team .swiper-slide .introduce {
+        position: absolute;
+        bottom: 0;
+        margin-top: 50px;
+        left: 50%;
         color: #000;
-        margin-bottom: 10px;
+        transform: translate(-50%);
+
+        padding: 5px;
+        margin: 0 auto;
+        opacity: 0;
+}
+.our-team .swiper-slide:hover .introduce {
+        margin-top: 0px;
+        opacity: 1;
+        bottom: -5%;
+}
+.our-team .swiper-slide .introduce h4 {
         font-size: 24px;
-        z-index: 2;
-        font-weight: 600;
+        font-weight: 800;
 }
-.our-team .team .card .card-img-overlay .content p {
-        color: #000;
-        margin-bottom: 10px;
-        z-index: 2;
+.our-team .swiper-slide .introduce p {
         font-size: 18px;
         font-weight: 500;
 }
-.our-team .team .card {
-        border-radius: 0;
-}
-.our-team .team .card img {
-        border-radius: 0;
-}
-
-.our-team .team .card .card-img-overlay .social button {
-        background-color: transparent;
-        transition: 0.5s;
-        margin-top: 15px;
-        border: 1px solid rgba(30, 29, 29, 0.692);
-        border-radius: 5px;
-        transition: 0.5s;
+.our-team .swiper-slide .introduce button a {
         color: #000;
 }
-.our-team .team .card .card-img-overlay .social button:hover {
-        background-color: #000;
-        margin-top: 5px;
-        border: none;
-        z-index: 2;
+.our-team .swiper-slide .introduce button a:hover {
         color: #ffff;
 }
+.our-team .swiper-slide .introduce button:hover a {
+        color: #ffff;
+}
+
+.our-team .swiper-slide .introduce button {
+        border: 1px solid #000;
+        padding: 5px;
+        margin: 0 auto;
+        background-color: transparent;
+        border-radius: 0;
+        font-size: 28;
+        font-weight: 600;
+}
+
+.our-team .swiper-slide .introduce button:hover {
+        background-color: #000;
+        color: #ffff;
+}
+
 .working-hour {
         margin-top: 30px;
         margin-bottom: 30px;
@@ -932,9 +915,9 @@ body {
 }
 .backtop {
         position: fixed;
-        bottom: 10px;
+        bottom: 40px;
         right: 10px;
-        background-color: #000;
+        background-color: #0000009d;
         z-index: 9999;
         padding: 8px 15px;
         font-size: 18px;

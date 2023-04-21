@@ -101,3 +101,8 @@
         opacity: 0.75;
         background-color: #c7c7c7;
 }
+@media (max-width: 575px) {
+        .slick-dots li button {
+                display: none;
+        }
+}
