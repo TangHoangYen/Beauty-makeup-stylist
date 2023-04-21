@@ -142,7 +142,7 @@
             </div>
         </div>
         <div class="checkout">
-            <form action="index.html"> 
+            
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-6 col-md-7 col-lg-7">
@@ -163,13 +163,35 @@
                                     <div class="icon"><i class="fa-solid fa-angle-down"></i></div>
                                 </div>
                                 <div class="content">
+                                    <div class="form-group">
+                                        <div class="information"><label for="">Họ Tên <span class="txt_red">(*)</span></label><span class="txt_red" id="error_name"></span></div>
+                                        <input type="text" class="form-control" id="txt_name"onblur="checkName();" >
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="information"><label for="">Điạ chỉ<span class="txt_red">(*)</span></label><span class="txt_red" id="error_address"></span></div>
+                                        <input type="text" class="form-control" id="txt_address"onblur="checkAddress();" >
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="information"><label for="">Email <span class="txt_red">(*)</span></label><span class="txt_red" id="error_email"></span></div>
+                                        <input type="email" class="form-control" id="txt_email"onblur="checkEmail();" >
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="information"><label for="">Điện thoại <span class="txt_red">(*)</span></label><span class="txt_red" id="error_phone"></span></div>
+                                        <input type="number" class="form-control" id="txt_phone"onblur="checkPhone();" >
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="information"><label for="">Ghi chú <span class="txt_red">(*)</span></label><span class="txt_red" id="error_note"></span></div>
+                                        <textarea type="text"class="form-control" id="txt_note" rows="10"  onblur="checkNote();"></textarea>
+                                      
+                                    </div>
+                                    
                                    
-                                        <input id="fullname" type="text" placeholder="Tên" required>
+                                        <!-- <input id="fullname" type="text" placeholder="Tên" required>
                                         <input id="address" type="text" placeholder="Địa chỉ" required>
                                         <input id="email" type="email" placeholder="Email" required>
-                                        <input id="phone" type="number" placeholder="Địện thoại" required>
+                                        <input id="phone" type="number" placeholder="Địện thoại" required> -->
                                         <!-- <input id="address_makeup" type="text" placeholder="Địa điểm makeup"> -->
-                                        <div class="error"></div>
+                                        <!-- <div class="error"></div> -->
                                      
                                     
                                    
@@ -184,23 +206,25 @@
                                     <div class="icon"><i class="fa-solid fa-angle-down"></i></div>
                                 </div>
                                 <div class="content">
-                                    <select class="from-select">
-                                        <option>
-                                            Địa điểm makeup/thuê stylist
-                                        </option>
-                                        <option>
-                                            Tại Sudio
-                                        </option>
-                                        <option>
-                                            Tại nhà riêng/Địa điểm khác
-                                        </option>
-                                    </select>
-                                    <input id="address_makeup" type="text" placeholder="Địa điểm makeup/thuê stylist" required>
-                                    <input id="fullname" type="date" placeholder="Ngày" required>
-                                    <input id="address" type="time" placeholder="Giờ" required>
+                                    <div class="form-group">
+                                        <div class="information"><label for="">Địa điểm makeup/thuê stylist <span class="txt_red">(*)</span></label><span class="txt_red" id="error_address_makeup"></span></div>
+                                        <input type="text"class="form-control" id="txt_address_makeup"  onblur="checkMakeup();">
+                                      
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="information"><label for="">Ngày<span class="txt_red">(*)</span></label><span class="txt_red" id="error_date"></span></div>
+                                        <input type="date"class="form-control" id="txt_date"  onblur="checkDate();">
+                                      
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="information"><label for="">Giờ<span class="txt_red">(*)</span></label><span class="txt_red" id="error_time"></span></div>
+                                        <input type="time"class="form-control" id="txt_time"  onblur="checkTime();">
+                                      
+                                    </div>
+                                   
                                    
                                   
-                                    <div class="error"></div>
+                                   
                                    
                                    
                                 </div>
@@ -349,7 +373,7 @@
                                         <h6>Makeup Cô Dâu tone Hàn trong suốt x1</h6>
                                     </div>
                                     <div class="price">
-                                        <h6>1,200,000 VNĐ</h6>
+                                        <h6>1,200,000</h6>
                                     </div>
                                 </div>
                                 <div class="content d-flex justify-content-between">
@@ -357,7 +381,7 @@
                                         <h6>Makeup hàn quốc tone Hàn trong suốt x1</h6>
                                     </div>
                                     <div class="price">
-                                        <h6>640,000 VNĐ</h6>
+                                        <h6>640,000</h6>
                                     </div>
                                 </div>
                                 <div class="content d-flex justify-content-between">
@@ -365,7 +389,7 @@
                                         <h6>Makeup sự kiện tone nâu tây x1</h6>
                                     </div>
                                     <div class="price">
-                                        <h6>900,000 VNĐ</h6>
+                                        <h6>900,000 </h6>
                                     </div>
                                 </div>
                                 <div class="content d-flex justify-content-between">
@@ -373,38 +397,38 @@
                                         <h6>Makeup concept style nhe cá tính x1</h6>
                                     </div>
                                     <div class="price">
-                                        <h6>720,000 VNĐ</h6>
+                                        <h6>720,000 </h6>
                                     </div>
                                 </div>
                             </div>
                             <div class="sub_total">
                                 <div class="title d-flex justify-content-between">
                                     <h4>Tổng</h4>
-                                    <h4>3,460,000 VNĐ</h4>
+                                    <h4>3,460,000 </h4>
                                 </div>
                                 <div class="content d-flex justify-content-between">
                                     <div class="text">
                                         <h6>(+) Phí dịch vụ</h6>
                                     </div>
                                     <div class="price">
-                                        <h6>50,000 VNĐ</h6>
+                                        <h6>50,000 </h6>
                                     </div>
                                 </div>
                             </div>
                             <div class="total_price ">
                                 <div class="title d-flex justify-content-between">
                                     <h4>Tổng cộng</h4>
-                                    <h4>3,510,000 VNĐ</h4>
+                                    <h4>3,510,000 </h4>
                                 </div>
                                 
                             </div>
                             
-                            <button type="submit"  class="btn">BOOK NGAY </button>
+                            <button type="submit" class="btn_1" onclick="send(); " ><a href="index.html">BOOK NGAY</a></button>
                         </div>
                     </div>
                 </div>
             </div>
-        </form>
+       
         </div>
 
       
