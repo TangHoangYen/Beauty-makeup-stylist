@@ -259,13 +259,27 @@ body {
         border-radius: 10px;
 }
 .detail .book .request button {
-        background-color: #000;
-        border: none;
-        color: #ffff;
+        background-color: transparent;
+        border: 1px solid #000;
+        color: #000;
         border-radius: 0;
         margin-top: 35px;
         font-size: 24px;
         font-weight: 600;
+}
+.detail .book .request button a {
+        color: #000;
+}
+.detail .book .request button a:hover {
+        color: #ffff;
+}
+.detail .book .request button:hover a {
+        color: #ffff;
+}
+.detail .book .request button:hover {
+        background-color: #000;
+
+        color: #ffff;
 }
 .description .nav-pills .nav-item .nav-link {
         color: #000;
@@ -393,4 +407,9 @@ input[type="date" i] {
 .description .tab-content .review_table {
         padding: 30px;
         margin: 0 auto;
+}
+.txt_red {
+        color: red;
+
+        font-style: italic;
 }
