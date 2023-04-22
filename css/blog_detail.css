@@ -159,3 +159,8 @@
         font-weight: 500;
         color: #000;
 }
+.blogs_detail .related_post .title:hover a {
+        font-size: 20px;
+        font-weight: 700;
+        color: #000;
+}
